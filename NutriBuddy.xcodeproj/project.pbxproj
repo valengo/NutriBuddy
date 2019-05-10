@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		648149D122859E8A00025353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648149D022859E8A00025353 /* AppDelegate.swift */; };
-		648149D322859E8A00025353 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648149D222859E8A00025353 /* ViewController.swift */; };
+		648149D322859E8A00025353 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648149D222859E8A00025353 /* HomeViewController.swift */; };
 		648149D622859E8A00025353 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648149D422859E8A00025353 /* Main.storyboard */; };
 		648149D822859E8B00025353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648149D722859E8B00025353 /* Assets.xcassets */; };
 		648149DB22859E8B00025353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648149D922859E8B00025353 /* LaunchScreen.storyboard */; };
 		648149E622859E8B00025353 /* NutriBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648149E522859E8B00025353 /* NutriBuddyTests.swift */; };
+		648149F92285C3BB00025353 /* TipCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648149F82285C3BB00025353 /* TipCollectionViewController.swift */; };
+		648149FD2285C44700025353 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648149FC2285C44700025353 /* Tip.swift */; };
+		64814A002285C52B00025353 /* TipLocalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648149FF2285C52B00025353 /* TipLocalSource.swift */; };
+		64814A032285C66A00025353 /* TipRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64814A022285C66A00025353 /* TipRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +32,7 @@
 /* Begin PBXFileReference section */
 		648149CD22859E8A00025353 /* NutriBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		648149D022859E8A00025353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		648149D222859E8A00025353 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		648149D222859E8A00025353 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		648149D522859E8A00025353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		648149D722859E8B00025353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		648149DA22859E8B00025353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +40,10 @@
 		648149E122859E8B00025353 /* NutriBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutriBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		648149E522859E8B00025353 /* NutriBuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriBuddyTests.swift; sourceTree = "<group>"; };
 		648149E722859E8B00025353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648149F82285C3BB00025353 /* TipCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCollectionViewController.swift; sourceTree = "<group>"; };
+		648149FC2285C44700025353 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		648149FF2285C52B00025353 /* TipLocalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipLocalSource.swift; sourceTree = "<group>"; };
+		64814A022285C66A00025353 /* TipRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,9 @@
 		648149CF22859E8A00025353 /* NutriBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				648149FA2285C41200025353 /* Model */,
+				648149F72285C31E00025353 /* Controller */,
 				648149D022859E8A00025353 /* AppDelegate.swift */,
-				648149D222859E8A00025353 /* ViewController.swift */,
 				648149D422859E8A00025353 /* Main.storyboard */,
 				648149D722859E8B00025353 /* Assets.xcassets */,
 				648149D922859E8B00025353 /* LaunchScreen.storyboard */,
@@ -94,6 +103,49 @@
 				648149E722859E8B00025353 /* Info.plist */,
 			);
 			path = NutriBuddyTests;
+			sourceTree = "<group>";
+		};
+		648149F72285C31E00025353 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				648149D222859E8A00025353 /* HomeViewController.swift */,
+				648149F82285C3BB00025353 /* TipCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		648149FA2285C41200025353 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64814A012285C65200025353 /* Repository */,
+				648149FE2285C51500025353 /* LocalSource */,
+				648149FB2285C42100025353 /* Domain */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		648149FB2285C42100025353 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				648149FC2285C44700025353 /* Tip.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		648149FE2285C51500025353 /* LocalSource */ = {
+			isa = PBXGroup;
+			children = (
+				648149FF2285C52B00025353 /* TipLocalSource.swift */,
+			);
+			path = LocalSource;
+			sourceTree = "<group>";
+		};
+		64814A012285C65200025353 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				64814A022285C66A00025353 /* TipRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +249,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				648149D322859E8A00025353 /* ViewController.swift in Sources */,
+				64814A002285C52B00025353 /* TipLocalSource.swift in Sources */,
+				648149D322859E8A00025353 /* HomeViewController.swift in Sources */,
+				648149FD2285C44700025353 /* Tip.swift in Sources */,
+				648149F92285C3BB00025353 /* TipCollectionViewController.swift in Sources */,
 				648149D122859E8A00025353 /* AppDelegate.swift in Sources */,
+				64814A032285C66A00025353 /* TipRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
