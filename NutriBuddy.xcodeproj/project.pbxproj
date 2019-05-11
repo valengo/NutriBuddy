@@ -17,6 +17,11 @@
 		64814A002285C52B00025353 /* TipLocalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648149FF2285C52B00025353 /* TipLocalSource.swift */; };
 		64814A032285C66A00025353 /* TipRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64814A022285C66A00025353 /* TipRepository.swift */; };
 		64814A0522865A0600025353 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64814A0422865A0600025353 /* TipsViewController.swift */; };
+		64814A072286EDB700025353 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64814A062286EDB700025353 /* Enumerations.swift */; };
+		64814A092286EE5800025353 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64814A082286EE5800025353 /* Question.swift */; };
+		64814A0B2286F0A400025353 /* QuestionLocalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64814A0A2286F0A400025353 /* QuestionLocalSource.swift */; };
+		64D8DD5C228706550039969B /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D8DD5B228706550039969B /* Example.swift */; };
+		64D8DD60228735720039969B /* QuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D8DD5F228735720039969B /* QuestionRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		648149FF2285C52B00025353 /* TipLocalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipLocalSource.swift; sourceTree = "<group>"; };
 		64814A022285C66A00025353 /* TipRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipRepository.swift; sourceTree = "<group>"; };
 		64814A0422865A0600025353 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		64814A062286EDB700025353 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
+		64814A082286EE5800025353 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		64814A0A2286F0A400025353 /* QuestionLocalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionLocalSource.swift; sourceTree = "<group>"; };
+		64D8DD5B228706550039969B /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		64D8DD5F228735720039969B /* QuestionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				648149FC2285C44700025353 /* Tip.swift */,
+				64814A062286EDB700025353 /* Enumerations.swift */,
+				64814A082286EE5800025353 /* Question.swift */,
+				64D8DD5B228706550039969B /* Example.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -136,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				648149FF2285C52B00025353 /* TipLocalSource.swift */,
+				64814A0A2286F0A400025353 /* QuestionLocalSource.swift */,
 			);
 			path = LocalSource;
 			sourceTree = "<group>";
@@ -144,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				64814A022285C66A00025353 /* TipRepository.swift */,
+				64D8DD5F228735720039969B /* QuestionRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -249,7 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D8DD5C228706550039969B /* Example.swift in Sources */,
 				64814A002285C52B00025353 /* TipLocalSource.swift in Sources */,
+				64814A092286EE5800025353 /* Question.swift in Sources */,
+				64814A072286EDB700025353 /* Enumerations.swift in Sources */,
+				64814A0B2286F0A400025353 /* QuestionLocalSource.swift in Sources */,
+				64D8DD60228735720039969B /* QuestionRepository.swift in Sources */,
 				648149D322859E8A00025353 /* HomeViewController.swift in Sources */,
 				64814A0522865A0600025353 /* TipsViewController.swift in Sources */,
 				648149FD2285C44700025353 /* Tip.swift in Sources */,
