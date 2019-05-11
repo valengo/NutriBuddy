@@ -8,7 +8,16 @@
 
 import Foundation
 
-struct Tip {
+class Tip {
+    
     let text: String
-    let image: String
+    
+    init(text: String) {
+        self.text = text
+    }
+    
+    func duration(wordsPerMinute: Int) ->  Int {
+        let numberOfWords = text.split(separator: " ").count
+        return max((60 * numberOfWords) / wordsPerMinute, 2)
+    }
 }

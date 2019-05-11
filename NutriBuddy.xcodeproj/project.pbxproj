@@ -13,10 +13,10 @@
 		648149D822859E8B00025353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648149D722859E8B00025353 /* Assets.xcassets */; };
 		648149DB22859E8B00025353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648149D922859E8B00025353 /* LaunchScreen.storyboard */; };
 		648149E622859E8B00025353 /* NutriBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648149E522859E8B00025353 /* NutriBuddyTests.swift */; };
-		648149F92285C3BB00025353 /* TipCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648149F82285C3BB00025353 /* TipCollectionViewController.swift */; };
 		648149FD2285C44700025353 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648149FC2285C44700025353 /* Tip.swift */; };
 		64814A002285C52B00025353 /* TipLocalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648149FF2285C52B00025353 /* TipLocalSource.swift */; };
 		64814A032285C66A00025353 /* TipRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64814A022285C66A00025353 /* TipRepository.swift */; };
+		64814A0522865A0600025353 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64814A0422865A0600025353 /* TipsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +40,10 @@
 		648149E122859E8B00025353 /* NutriBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutriBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		648149E522859E8B00025353 /* NutriBuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriBuddyTests.swift; sourceTree = "<group>"; };
 		648149E722859E8B00025353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		648149F82285C3BB00025353 /* TipCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCollectionViewController.swift; sourceTree = "<group>"; };
 		648149FC2285C44700025353 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		648149FF2285C52B00025353 /* TipLocalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipLocalSource.swift; sourceTree = "<group>"; };
 		64814A022285C66A00025353 /* TipRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipRepository.swift; sourceTree = "<group>"; };
+		64814A0422865A0600025353 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				648149D222859E8A00025353 /* HomeViewController.swift */,
-				648149F82285C3BB00025353 /* TipCollectionViewController.swift */,
+				64814A0422865A0600025353 /* TipsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -251,8 +251,8 @@
 			files = (
 				64814A002285C52B00025353 /* TipLocalSource.swift in Sources */,
 				648149D322859E8A00025353 /* HomeViewController.swift in Sources */,
+				64814A0522865A0600025353 /* TipsViewController.swift in Sources */,
 				648149FD2285C44700025353 /* Tip.swift in Sources */,
-				648149F92285C3BB00025353 /* TipCollectionViewController.swift in Sources */,
 				648149D122859E8A00025353 /* AppDelegate.swift in Sources */,
 				64814A032285C66A00025353 /* TipRepository.swift in Sources */,
 			);

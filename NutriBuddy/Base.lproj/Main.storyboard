@@ -47,7 +47,7 @@
 a sua
 alimentação?</string>
                                         <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="46"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.16860893368721008" green="0.16863927245140076" blue="0.16860228776931763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -64,12 +64,12 @@ alimentação?</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSf-DG-8US">
                                         <rect key="frame" x="20.5" y="46.5" width="373" height="61.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.85099619626998901" blue="0.32728961110115051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="18"/>
                                         <state key="normal" title="Fazer o teste">
                                             <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <segue destination="yAp-vc-9Pw" kind="show" id="rwP-xF-MAe"/>
+                                            <segue destination="axm-yx-hml" kind="show" id="aNg-r9-DWi"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -108,39 +108,89 @@ alimentação?</string>
             </objects>
             <point key="canvasLocation" x="489.85507246376818" y="163.39285714285714"/>
         </scene>
-        <!--Tip Collection View Controller-->
-        <scene sceneID="Ihj-UX-hVM">
+        <!--Tips View Controller-->
+        <scene sceneID="b7p-EA-nsD">
             <objects>
-                <collectionViewController id="yAp-vc-9Pw" customClass="TipCollectionViewController" customModule="NutriBuddy" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2W6-iw-HTV">
+                <viewController id="axm-yx-hml" customClass="TipsViewController" customModule="NutriBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g3h-kg-a0b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WjF-lS-i97" userLabel="Text View">
+                                <rect key="frame" x="0.0" y="88" width="414" height="619"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se você achar que mais de uma resposta está certa, escolha a que você mais costuma fazer quando come." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Y8C-jf-6Fa">
+                                        <rect key="frame" x="20.5" y="62" width="373" height="495.5"/>
+                                        <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
+                                        <color key="textColor" red="0.16860893368721008" green="0.16863927245140076" blue="0.16860228776931763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Y8C-jf-6Fa" firstAttribute="centerX" secondItem="WjF-lS-i97" secondAttribute="centerX" id="YDq-KT-Vdj"/>
+                                    <constraint firstItem="Y8C-jf-6Fa" firstAttribute="height" secondItem="WjF-lS-i97" secondAttribute="height" multiplier="0.8" id="rg0-w7-nti"/>
+                                    <constraint firstItem="Y8C-jf-6Fa" firstAttribute="centerY" secondItem="WjF-lS-i97" secondAttribute="centerY" id="ygp-iE-rpX"/>
+                                    <constraint firstItem="Y8C-jf-6Fa" firstAttribute="width" secondItem="WjF-lS-i97" secondAttribute="width" multiplier="0.9" id="zpF-Ye-CTY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H07-xh-sSX" userLabel="Button View">
+                                <rect key="frame" x="0.0" y="707" width="414" height="155"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-R1-ven">
+                                        <rect key="frame" x="20.5" y="46.5" width="373" height="62"/>
+                                        <color key="backgroundColor" red="1" green="0.30672359466552734" blue="0.18894311785697937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Pular dicas"/>
+                                        <connections>
+                                            <segue destination="LFZ-nG-z6I" kind="show" id="ycE-yP-GgW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Mp0-R1-ven" firstAttribute="centerY" secondItem="H07-xh-sSX" secondAttribute="centerY" id="E5H-a6-Juw"/>
+                                    <constraint firstItem="Mp0-R1-ven" firstAttribute="height" secondItem="H07-xh-sSX" secondAttribute="height" multiplier="0.4" id="P8p-T5-qut"/>
+                                    <constraint firstItem="Mp0-R1-ven" firstAttribute="width" secondItem="H07-xh-sSX" secondAttribute="width" multiplier="0.9" id="XEt-R6-JEQ"/>
+                                    <constraint firstItem="Mp0-R1-ven" firstAttribute="centerX" secondItem="H07-xh-sSX" secondAttribute="centerX" id="rYb-31-kKa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WjF-lS-i97" firstAttribute="centerX" secondItem="M0t-Cx-ycL" secondAttribute="centerX" id="9j5-XL-ieJ"/>
+                            <constraint firstItem="WjF-lS-i97" firstAttribute="height" secondItem="M0t-Cx-ycL" secondAttribute="height" multiplier="0.8" id="BVF-5I-FWX"/>
+                            <constraint firstItem="WjF-lS-i97" firstAttribute="top" secondItem="M0t-Cx-ycL" secondAttribute="top" id="DdI-H9-EfG"/>
+                            <constraint firstItem="H07-xh-sSX" firstAttribute="top" secondItem="WjF-lS-i97" secondAttribute="bottom" id="EXi-3J-7M0"/>
+                            <constraint firstItem="H07-xh-sSX" firstAttribute="centerX" secondItem="M0t-Cx-ycL" secondAttribute="centerX" id="EyE-Xd-TAV"/>
+                            <constraint firstItem="WjF-lS-i97" firstAttribute="width" secondItem="M0t-Cx-ycL" secondAttribute="width" id="F28-gT-BUA"/>
+                            <constraint firstItem="H07-xh-sSX" firstAttribute="width" secondItem="M0t-Cx-ycL" secondAttribute="width" id="XmB-uy-VZB"/>
+                            <constraint firstItem="H07-xh-sSX" firstAttribute="height" secondItem="M0t-Cx-ycL" secondAttribute="height" multiplier="0.2" id="j65-Zl-S9C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M0t-Cx-ycL"/>
+                    </view>
+                    <connections>
+                        <outlet property="startTestButton" destination="Mp0-R1-ven" id="BxJ-QK-VbU"/>
+                        <outlet property="tipLabel" destination="Y8C-jf-6Fa" id="8FJ-t4-lKz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kqz-Gs-3gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1264" y="163"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="unT-r3-VUB">
+            <objects>
+                <viewController id="LFZ-nG-z6I" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F8Z-op-yY0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RFF-VI-JZV">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TipCell" id="F2J-PT-r7o">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="yAp-vc-9Pw" id="kHd-n7-RAu"/>
-                            <outlet property="delegate" destination="yAp-vc-9Pw" id="0xN-Cc-q3y"/>
-                        </connections>
-                    </collectionView>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zNd-DW-6J9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="vAz-88-ohA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahq-0M-yw2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1297" y="163"/>
+            <point key="canvasLocation" x="2053" y="163"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W6T-ar-Hf7">
