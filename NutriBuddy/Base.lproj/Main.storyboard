@@ -63,7 +63,7 @@ alimentação?</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSf-DG-8US">
                                         <rect key="frame" x="20.5" y="46.5" width="373" height="61.5"/>
-                                        <color key="backgroundColor" red="0.0" green="0.85099619626998901" blue="0.32728961110115051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.85098039215686272" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="18"/>
                                         <state key="normal" title="Fazer o teste">
                                             <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -106,7 +106,7 @@ alimentação?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="489.85507246376818" y="163.39285714285714"/>
+            <point key="canvasLocation" x="325" y="163"/>
         </scene>
         <!--Tips View Controller-->
         <scene sceneID="b7p-EA-nsD">
@@ -138,7 +138,7 @@ alimentação?</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-R1-ven">
                                         <rect key="frame" x="20.5" y="46.5" width="373" height="62"/>
-                                        <color key="backgroundColor" red="1" green="0.30672359466552734" blue="0.18894311785697937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.30588235294117649" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Pular dicas"/>
@@ -175,22 +175,224 @@ alimentação?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqz-Gs-3gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1264" y="163"/>
+            <point key="canvasLocation" x="1057" y="163"/>
         </scene>
-        <!--View Controller-->
+        <!--Questions View Controller-->
         <scene sceneID="unT-r3-VUB">
             <objects>
-                <viewController id="LFZ-nG-z6I" sceneMemberID="viewController">
+                <viewController id="LFZ-nG-z6I" customClass="QuestionsViewController" customModule="NutriBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F8Z-op-yY0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uuJ-Kz-E1W" userLabel="Question View">
+                                <rect key="frame" x="0.0" y="88" width="414" height="232"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual é, em média, a quantidade de frutas que você come por dia?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="PSh-I0-r2e">
+                                        <rect key="frame" x="41.5" y="10" width="331" height="186"/>
+                                        <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="31"/>
+                                        <color key="textColor" red="0.16860893368721008" green="0.16863927245140076" blue="0.16860228776931763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.16860893368721008" green="0.16863927245140076" blue="0.16860228776931763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PSh-I0-r2e" firstAttribute="centerX" secondItem="uuJ-Kz-E1W" secondAttribute="centerX" id="TKf-cn-dVo"/>
+                                    <constraint firstItem="PSh-I0-r2e" firstAttribute="height" secondItem="uuJ-Kz-E1W" secondAttribute="height" multiplier="0.8" id="VSa-9p-qFx"/>
+                                    <constraint firstItem="PSh-I0-r2e" firstAttribute="top" secondItem="uuJ-Kz-E1W" secondAttribute="top" constant="10" id="gdz-9S-hyf"/>
+                                    <constraint firstItem="PSh-I0-r2e" firstAttribute="width" secondItem="uuJ-Kz-E1W" secondAttribute="width" multiplier="0.8" id="iZq-uX-seZ"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bp6-WR-P79">
+                                <rect key="frame" x="0.0" y="320" width="414" height="542"/>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uuJ-Kz-E1W" firstAttribute="centerX" secondItem="vAz-88-ohA" secondAttribute="centerX" id="4hk-lS-Uqx"/>
+                            <constraint firstItem="Bp6-WR-P79" firstAttribute="centerX" secondItem="vAz-88-ohA" secondAttribute="centerX" id="6Iq-S6-Fbq"/>
+                            <constraint firstItem="Bp6-WR-P79" firstAttribute="width" secondItem="vAz-88-ohA" secondAttribute="width" id="9lB-bY-DA2"/>
+                            <constraint firstItem="uuJ-Kz-E1W" firstAttribute="top" secondItem="vAz-88-ohA" secondAttribute="top" id="Aj5-jV-tml"/>
+                            <constraint firstItem="Bp6-WR-P79" firstAttribute="top" secondItem="uuJ-Kz-E1W" secondAttribute="bottom" id="JOn-pd-QgE"/>
+                            <constraint firstItem="Bp6-WR-P79" firstAttribute="height" secondItem="vAz-88-ohA" secondAttribute="height" multiplier="0.7" id="t0W-cD-jH2"/>
+                            <constraint firstItem="uuJ-Kz-E1W" firstAttribute="width" secondItem="vAz-88-ohA" secondAttribute="width" id="w1D-t8-EMy"/>
+                            <constraint firstItem="uuJ-Kz-E1W" firstAttribute="height" secondItem="vAz-88-ohA" secondAttribute="height" multiplier="0.3" id="wpn-1M-sX6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vAz-88-ohA"/>
                     </view>
+                    <connections>
+                        <outlet property="answerView" destination="Bp6-WR-P79" id="LCL-f5-ThO"/>
+                        <outlet property="questionLabel" destination="PSh-I0-r2e" id="wRg-ko-lZi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahq-0M-yw2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2053" y="163"/>
+            <point key="canvasLocation" x="1896" y="163"/>
+        </scene>
+        <!--Answer With Input View Controller-->
+        <scene sceneID="avw-LS-g61">
+            <objects>
+                <viewController storyboardIdentifier="AnswerWithInputViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CAh-cn-ZWr" customClass="AnswerWithInputViewController" customModule="NutriBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LZv-jB-AYZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VS1-6W-hKN" userLabel="Input View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="572.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KEC-RJ-ATC">
+                                        <rect key="frame" x="41.5" y="257.5" width="331" height="57.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="_________" textAlignment="right" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="W92-hd-45e">
+                                                <rect key="frame" x="0.0" y="0.0" width="160.5" height="57.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fatias" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="3JM-Eg-U7C">
+                                                <rect key="frame" x="170.5" y="0.0" width="160.5" height="57.5"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                                <color key="textColor" red="0.16860893368721008" green="0.16863927245140076" blue="0.16860228776931763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KEC-RJ-ATC" firstAttribute="centerY" secondItem="VS1-6W-hKN" secondAttribute="centerY" id="4ZH-NX-kmv"/>
+                                    <constraint firstItem="KEC-RJ-ATC" firstAttribute="height" secondItem="VS1-6W-hKN" secondAttribute="height" multiplier="0.1" id="PSR-V3-e6H"/>
+                                    <constraint firstItem="KEC-RJ-ATC" firstAttribute="centerX" secondItem="VS1-6W-hKN" secondAttribute="centerX" id="bsp-bS-LR0"/>
+                                    <constraint firstItem="KEC-RJ-ATC" firstAttribute="width" secondItem="VS1-6W-hKN" secondAttribute="width" multiplier="0.8" id="e8v-xZ-IKH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NwK-q4-Oly" userLabel="Button View">
+                                <rect key="frame" x="0.0" y="616.5" width="414" height="327.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66c-uK-qTu">
+                                        <rect key="frame" x="20.5" y="98.5" width="373" height="130.5"/>
+                                        <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                        <color key="tintColor" red="0.0" green="0.87143188714981079" blue="0.21991467475891113" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Continuar"/>
+                                        <connections>
+                                            <action selector="nextClick:" destination="CAh-cn-ZWr" eventType="touchUpInside" id="NX3-Rj-nSb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="66c-uK-qTu" firstAttribute="height" secondItem="NwK-q4-Oly" secondAttribute="height" multiplier="0.4" id="2oy-Sa-GaB"/>
+                                    <constraint firstItem="66c-uK-qTu" firstAttribute="centerX" secondItem="NwK-q4-Oly" secondAttribute="centerX" id="LAF-hp-7fv"/>
+                                    <constraint firstItem="66c-uK-qTu" firstAttribute="width" secondItem="NwK-q4-Oly" secondAttribute="width" multiplier="0.9" id="QOd-Jt-Sxq"/>
+                                    <constraint firstItem="66c-uK-qTu" firstAttribute="centerY" secondItem="NwK-q4-Oly" secondAttribute="centerY" id="pup-lc-g1l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NwK-q4-Oly" firstAttribute="width" secondItem="inq-dM-FdL" secondAttribute="width" id="6rf-eH-mu1"/>
+                            <constraint firstItem="NwK-q4-Oly" firstAttribute="centerX" secondItem="inq-dM-FdL" secondAttribute="centerX" id="FOs-ly-4Z2"/>
+                            <constraint firstItem="VS1-6W-hKN" firstAttribute="centerX" secondItem="inq-dM-FdL" secondAttribute="centerX" id="Inq-s3-7mm"/>
+                            <constraint firstItem="VS1-6W-hKN" firstAttribute="height" secondItem="inq-dM-FdL" secondAttribute="height" multiplier="0.7" id="UvG-Ga-fGK"/>
+                            <constraint firstItem="VS1-6W-hKN" firstAttribute="width" secondItem="inq-dM-FdL" secondAttribute="width" id="YFb-yL-b8n"/>
+                            <constraint firstItem="NwK-q4-Oly" firstAttribute="height" secondItem="inq-dM-FdL" secondAttribute="height" multiplier="0.4" id="juQ-Md-9y2"/>
+                            <constraint firstItem="VS1-6W-hKN" firstAttribute="top" secondItem="inq-dM-FdL" secondAttribute="top" id="lNt-Tl-Lrq"/>
+                            <constraint firstItem="NwK-q4-Oly" firstAttribute="top" secondItem="VS1-6W-hKN" secondAttribute="bottom" id="pRD-qr-1Wp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="inq-dM-FdL"/>
+                    </view>
+                    <connections>
+                        <outlet property="amountTextField" destination="W92-hd-45e" id="tRf-3B-uRZ"/>
+                        <outlet property="amountUnityLabel" destination="3JM-Eg-U7C" id="TV3-Ps-EkX"/>
+                        <outlet property="nextButton" destination="66c-uK-qTu" id="mHF-mu-X6j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tK5-mn-uO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2603" y="163"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="rDU-od-riB">
+            <objects>
+                <collectionViewController storyboardIdentifier="CollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tss-zO-8sc" customClass="CollectionViewController" customModule="NutriBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ujD-2V-H81">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dt0-W1-nh9">
+                            <size key="itemSize" width="263" height="278"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AnswerCell" id="YnP-fo-YGn" customClass="AnswerViewCell" customModule="NutriBuddy" customModuleProvider="target">
+                                <rect key="frame" x="75.5" y="0.0" width="263" height="278"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="263" height="278"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="de duas a três vezes " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-4z-uDU">
+                                            <rect key="frame" x="13" y="28" width="237" height="222"/>
+                                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.3294117647" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gdY-4z-uDU" firstAttribute="height" secondItem="YnP-fo-YGn" secondAttribute="height" multiplier="0.8" id="2C8-EZ-tKr"/>
+                                    <constraint firstItem="gdY-4z-uDU" firstAttribute="width" secondItem="YnP-fo-YGn" secondAttribute="width" multiplier="0.9" id="EPt-ob-PIS"/>
+                                    <constraint firstItem="gdY-4z-uDU" firstAttribute="centerY" secondItem="YnP-fo-YGn" secondAttribute="centerY" id="fDK-C6-uyZ"/>
+                                    <constraint firstItem="gdY-4z-uDU" firstAttribute="centerX" secondItem="YnP-fo-YGn" secondAttribute="centerX" id="jdR-X7-gwR"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="answerLabel" destination="gdY-4z-uDU" id="QU9-QN-rAn"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Tss-zO-8sc" id="leO-wF-sTH"/>
+                            <outlet property="delegate" destination="Tss-zO-8sc" id="Quq-MQ-XS5"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xb1-PJ-Z3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3319" y="163"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="Sg6-wS-FeN">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="knr-PA-tbH" customClass="ResultViewController" customModule="NutriBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ut-BW-GV2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oq2-QJ-GMJ">
+                                <rect key="frame" x="41.5" y="248.5" width="331" height="409"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.16860893368721008" green="0.16863927245140076" blue="0.16860228776931763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oq2-QJ-GMJ" firstAttribute="centerY" secondItem="cF3-ZV-4EX" secondAttribute="centerY" id="4jz-l7-sQD"/>
+                            <constraint firstItem="oq2-QJ-GMJ" firstAttribute="centerX" secondItem="cF3-ZV-4EX" secondAttribute="centerX" id="DIF-gB-Epc"/>
+                            <constraint firstItem="oq2-QJ-GMJ" firstAttribute="height" secondItem="cF3-ZV-4EX" secondAttribute="height" multiplier="0.5" id="L6y-QY-M35"/>
+                            <constraint firstItem="oq2-QJ-GMJ" firstAttribute="width" secondItem="cF3-ZV-4EX" secondAttribute="width" multiplier="0.8" id="gc9-QY-cvZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cF3-ZV-4EX"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultText" destination="oq2-QJ-GMJ" id="rhK-Vn-cEU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DkY-Ya-gYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4049" y="163"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W6T-ar-Hf7">

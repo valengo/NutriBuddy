@@ -49,7 +49,7 @@ final class QuestionLocalSource {
         Question(group: QuestionGroup.cho,
                  text: "Qual é, em média, a quantidade de bolos sem cobertura e/ou recheio que você consome por dia?", answers: ["fatias"], points: nil, warning: nil, examples: nil, tooltips: nil),
         Question(group: QuestionGroup.cho,
-                 text: "Qual é, em média, a quantidade de biscoito ou bolacha sem rechio que você consome por dia?", answers: ["unidades"], points: nil, warning: nil, examples: nil, tooltips: nil),
+                 text: "Qual é, em média, a quantidade de biscoito ou bolacha sem recheio que você consome por dia?", answers: ["unidades"], points: nil, warning: nil, examples: nil, tooltips: nil),
         Question(group: QuestionGroup.protein,
                  text: "Qual é, em média, a quantidade de carnes (gado, porco, aves, peixes e outras) ou ovos que você come por dia?",
                  answers: ["zero", "um", "dois", "mais de dois"],
